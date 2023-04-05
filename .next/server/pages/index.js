@@ -5,7 +5,7 @@ exports.id = 405;
 exports.ids = [405];
 exports.modules = {
 
-/***/ 4637:
+/***/ 2836:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -32,22 +32,22 @@ var data = __webpack_require__(954);
 function LatestCode({ repositories , latestRepo  }) {
     const [repos, setRepos] = (0,external_react_.useState)(repositories);
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
-        className: "bg-[#F1F1F1] md:-mt-36 dark:bg-gray-900 pb-28",
+        className: "bg-[#F1F1F1] lg:-mt-36 dark:bg-gray-900 pb-28",
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: "max-w-5xl mx-auto",
+                className: "lg:max-w-5xl max-w-2xl mx-auto",
                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: "flex flex-col md:flex-row justify-between items-center md:pt-40 mx-10",
+                    className: "flex flex-col lg:flex-row justify-between items-center lg:pt-40 mx-10",
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("h1", {
-                            className: "text-5xl lg:text-8xl max-w-xl font-bold text-gray-500 mt-28 md:mt-1 md:ml-10 md:text-white dark:text-slate-800 text-center lg:text-left",
+                            className: "text-6xl lg:text-8xl font-bold text-gray-500 mt-8 mb-2 lg:pl-0 pl-5 lg:mt-2 lg:ml-8 dark:text-slate-800 text-center lg:text-left",
                             children: "Latest Code"
                         }),
                         /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
                             href: `https://github.com/${data/* default.githubUsername */.Z.githubUsername}`,
                             target: "_blank",
                             rel: "noopener noreferrer",
-                            className: "mb-20 md:mb-0 px-8 py-4 rounded-md bg-white drop-shadow-2xl  text-xl font-semibold flex flex-row space-x-3 items-center dark:text-gray-700 mt-6",
+                            className: "mb-6 lg:mb-0 px-8 py-4 rounded-md bg-white drop-shadow-2xl  text-xl font-semibold flex flex-row space-x-3 items-center dark:text-gray-700 mt-3",
                             children: [
                                 /*#__PURE__*/ jsx_runtime_.jsx("svg", {
                                     xmlns: "http://www.w3.org/2000/svg",
@@ -72,7 +72,7 @@ function LatestCode({ repositories , latestRepo  }) {
                 })
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto px-10 lg:-mt-10 gap-y-20",
+                className: "grid grid-cols-1 lg:grid-cols-3 lg:max-w-6xl max-w-md mx-auto px-8 lg:-mt-10 gap-y-14 mt-10 lg:gap-y-20",
                 children: repos && repos.map((latestRepo, idx)=>/*#__PURE__*/ jsx_runtime_.jsx(GithubRepoCard, {
                         latestRepo: latestRepo
                     }, "idx"))
@@ -82,10 +82,10 @@ function LatestCode({ repositories , latestRepo  }) {
 }
 const GithubRepoCard = ({ latestRepo  })=>{
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-        className: "max-w-5xl mx-auto md:ml-28 md:mt-16",
+        className: "max-w-5xl mx-auto ml-28 lg:ml-28 lg:mt-16",
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("h1", {
-                className: "font-semibold text-xl dark:text-gray-200 text-gray-700",
+                className: "font-semibold text-2xl lg:text-xl dark:text-gray-200 text-gray-700",
                 children: latestRepo.name
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("p", {
@@ -96,10 +96,9 @@ const GithubRepoCard = ({ latestRepo  })=>{
                 href: latestRepo.clone_url,
                 target: "_blank",
                 rel: "noopener noreferrer",
-                className: "font-semibold group flex flex-row space-x-2 w-full items-center",
+                className: "font-semibold group flex flex-row space-x-1 w-full items-center",
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx("p", {
-                        className: "-mr-1",
                         children: "View Repository"
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("svg", {
@@ -156,27 +155,6 @@ const getLatestRepos = async (data, token)=>{
 
 ;// CONCATENATED MODULE: external "react-rough-notation"
 const external_react_rough_notation_namespaceObject = require("react-rough-notation");
-;// CONCATENATED MODULE: ./components/RainbowHighlight.js
-
-
-
-const RainbowHighlight = ({ color , children  })=>{
-    // Change the animation duration depending on length of text we're animating (speed = distance / time)
-    const animationDuration = Math.floor(30 * children.length);
-    return /*#__PURE__*/ _jsx(RoughNotation, {
-        type: "highlight",
-        multiline: true,
-        padding: [
-            0,
-            2
-        ],
-        iterations: 1,
-        animationDuration: animationDuration,
-        color: color,
-        children: children
-    });
-};
-
 ;// CONCATENATED MODULE: ./components/BoxAnimation.js
 
 
@@ -203,7 +181,6 @@ const BoxAnimation = ({ color , children  })=>{
 
 
 
-
 function Hero() {
     const colors = [
         "#F59E0B",
@@ -215,32 +192,33 @@ function Hero() {
         className: "max-w-6xl mx-auto flex flex-row overflow-hidden",
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: "md:w-1/2 mx-auto text-center md:text-left lg:p-20",
+                className: "mx-auto text-center lg:text-left lg:pl-0 lg:pt-20 lg:pr-24 lg:pb-20 pb-8 pl-11",
                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_rough_notation_namespaceObject.RoughNotationGroup, {
                     show: true,
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            className: "mb-1",
                             children: /*#__PURE__*/ jsx_runtime_.jsx("h3", {
-                                className: "text-5xl md:text-6xl font-bold text-gray-700 dark:text-gray-200",
+                                className: "lg:text-6xl text-5xl font-bold text-gray-700 dark:text-gray-200",
                                 children: "Nick Ahlers"
                             })
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: "w-80",
+                            className: "lg:w-80 w-64 lg:ml-0 ml-1",
                             children: /*#__PURE__*/ jsx_runtime_.jsx(BoxAnimation, {
                                 color: colors[3],
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("h3", {
-                                    className: "text-5xl md:text-6xl font-bold text-gray-700 dark:text-gray-200 my-5",
+                                    className: "lg:text-6xl text-5xl font-bold text-gray-700 dark:text-gray-200",
                                     children: "Developer."
                                 })
                             })
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            className: "w-48",
+                            className: "lg:w-48 mt-5 w-40 lg:ml-0 ml-10",
                             children: /*#__PURE__*/ jsx_runtime_.jsx(BoxAnimation, {
                                 color: colors[2],
                                 children: /*#__PURE__*/ jsx_runtime_.jsx("h3", {
-                                    className: "text-5xl md:text-6xl font-bold text-gray-700 dark:text-gray-200 my-5",
+                                    className: "lg:text-6xl text-5xl font-bold text-gray-700 dark:text-gray-200",
                                     children: "IT Pro."
                                 })
                             })
@@ -249,9 +227,9 @@ function Hero() {
                 })
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: "hidden lg:block relative w-full md:w-1/2 -mr-40 mt-20",
+                className: "hidden lg:block relative w-full md:w-1/2 -mr-40 mt-12",
                 children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: "w-2/5 ml-20 ",
+                    className: "w-2/5 ml-24",
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("img", {
                             src: data/* default.avatarUrl */.Z.avatarUrl,
@@ -409,7 +387,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [664,537], () => (__webpack_exec__(4637)));
+var __webpack_exports__ = __webpack_require__.X(0, [664,537], () => (__webpack_exec__(2836)));
 module.exports = __webpack_exports__;
 
 })();

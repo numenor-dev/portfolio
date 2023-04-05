@@ -1,6 +1,5 @@
 import React from "react";
-import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
-import { RainbowHighlight } from "./RainbowHighlight";
+import { RoughNotationGroup } from "react-rough-notation";
 import { BoxAnimation } from "./BoxAnimation";
 import userData from "@constants/data";
 
@@ -10,23 +9,23 @@ export default function Hero() {
     <div className="max-w-6xl mx-auto flex flex-row overflow-hidden">
       {/* Text container */}
 
-      <div className="md:w-1/2 mx-auto text-center md:text-left lg:p-20">
+      <div className="mx-auto text-center lg:text-left lg:pl-0 lg:pt-20 lg:pr-24 lg:pb-20 pb-8 pl-11">
         <RoughNotationGroup show={true}>
-          <div>
-            <h3 className="text-5xl md:text-6xl font-bold text-gray-700 dark:text-gray-200">
+          <div className="mb-1">
+            <h3 className="lg:text-6xl text-5xl font-bold text-gray-700 dark:text-gray-200">
               Nick Ahlers
             </h3>
           </div>
-          <div className="w-80">
+          <div className="lg:w-80 w-64 lg:ml-0 ml-1">
           <BoxAnimation color={colors[3]}>
-            <h3 className="text-5xl md:text-6xl font-bold text-gray-700 dark:text-gray-200 my-5">
+            <h3 className="lg:text-6xl text-5xl font-bold text-gray-700 dark:text-gray-200">
               Developer.
             </h3>
           </BoxAnimation>
           </div>
-          <div className="w-48">
+          <div className="lg:w-48 mt-5 w-40 lg:ml-0 ml-10">
           <BoxAnimation color={colors[2]}>
-            <h3 className="text-5xl md:text-6xl font-bold text-gray-700 dark:text-gray-200 my-5">
+            <h3 className="lg:text-6xl text-5xl font-bold text-gray-700 dark:text-gray-200">
               IT Pro.
             </h3>
           </BoxAnimation>
@@ -34,8 +33,8 @@ export default function Hero() {
         </RoughNotationGroup>
       </div>
       {/* Image container */}
-      <div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mt-20">
-        <div className="w-2/5 ml-20 ">
+      <div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mt-12">
+        <div className="w-2/5 ml-24">
           <img src={userData.avatarUrl} alt="avatar" className="drop-shadow-2xl" />
           <div className="flex flex-row justify-between mt-4">
             <div className="flex flex-row space-x-4">
