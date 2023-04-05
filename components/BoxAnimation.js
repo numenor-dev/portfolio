@@ -7,7 +7,7 @@ return (
     <RoughNotation
         type="box"
         multiline={false}
-        padding={[5, 8]}
+        padding={[4, 8]}
         strokeWidth={5}
         iterations={1}
         animationDuration={2000}

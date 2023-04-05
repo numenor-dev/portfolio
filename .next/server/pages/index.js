@@ -40,14 +40,14 @@ function LatestCode({ repositories , latestRepo  }) {
                     className: "flex flex-col md:flex-row justify-between items-center md:pt-40 mx-10",
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("h1", {
-                            className: "text-5xl lg:text-8xl max-w-xl font-bold text-gray-500 mt-28 md:-mt-4 md:ml-10 md:text-white dark:text-slate-800 text-center lg:text-left",
+                            className: "text-5xl lg:text-8xl max-w-xl font-bold text-gray-500 mt-28 md:mt-1 md:ml-10 md:text-white dark:text-slate-800 text-center lg:text-left",
                             children: "Latest Code"
                         }),
                         /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
                             href: `https://github.com/${data/* default.githubUsername */.Z.githubUsername}`,
                             target: "_blank",
                             rel: "noopener noreferrer",
-                            className: "mb-20 md:mb-0 px-8 py-4 rounded-md bg-white drop-shadow-2xl  text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700 mt-16",
+                            className: "mb-20 md:mb-0 px-8 py-4 rounded-md bg-white drop-shadow-2xl  text-xl font-semibold flex flex-row space-x-3 items-center dark:text-gray-700 mt-6",
                             children: [
                                 /*#__PURE__*/ jsx_runtime_.jsx("svg", {
                                     xmlns: "http://www.w3.org/2000/svg",
@@ -72,7 +72,7 @@ function LatestCode({ repositories , latestRepo  }) {
                 })
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-10 lg:-mt-10 gap-y-20",
+                className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto px-10 lg:-mt-10 gap-y-20",
                 children: repos && repos.map((latestRepo, idx)=>/*#__PURE__*/ jsx_runtime_.jsx(GithubRepoCard, {
                         latestRepo: latestRepo
                     }, "idx"))
@@ -82,7 +82,7 @@ function LatestCode({ repositories , latestRepo  }) {
 }
 const GithubRepoCard = ({ latestRepo  })=>{
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-        className: "max-w-5xl mx-auto md:ml-28 md:mt-8",
+        className: "max-w-5xl mx-auto md:ml-28 md:mt-16",
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("h1", {
                 className: "font-semibold text-xl dark:text-gray-200 text-gray-700",
@@ -186,7 +186,7 @@ const BoxAnimation = ({ color , children  })=>{
         type: "box",
         multiline: false,
         padding: [
-            5,
+            4,
             8
         ],
         strokeWidth: 5,
@@ -221,7 +221,7 @@ function Hero() {
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx("div", {
                             children: /*#__PURE__*/ jsx_runtime_.jsx("h3", {
-                                className: "text-5xl md:text-6xl font-bold text-gray-700 dark:text-gray-200 my-2",
+                                className: "text-5xl md:text-6xl font-bold text-gray-700 dark:text-gray-200",
                                 children: "Nick Ahlers"
                             })
                         }),

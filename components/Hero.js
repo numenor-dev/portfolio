@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="md:w-1/2 mx-auto text-center md:text-left lg:p-20">
         <RoughNotationGroup show={true}>
           <div>
-            <h3 className="text-5xl md:text-6xl font-bold text-gray-700 dark:text-gray-200 my-2">
+            <h3 className="text-5xl md:text-6xl font-bold text-gray-700 dark:text-gray-200">
               Nick Ahlers
             </h3>
           </div>

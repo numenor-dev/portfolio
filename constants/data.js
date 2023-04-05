@@ -66,9 +66,9 @@ const userData = {
     },
   ],
   resumeUrl:
-    "https://drive.google.com/file/d/1xmE3BOmgM7TAOOgVp36xQIQvYDntDYoo/view?usp=sharing",
+    "https://drive.google.com/file/d/1Nqn4vvRKqN-DkIdAmkVoQXafg9rHbamO/view?usp=share_link",
   mernCert: 
-    "https://drive.google.com",
+    "https://drive.google.com/file/d/1szbtm8OkMXUx58Z2sKxJBNwfBtgFhfKs/view?usp=share_link",
   socialLinks: {
     linkedin: "https://linkedin.com/in/nick-ahlers",
     github: "https://github.com/numenor-dev",

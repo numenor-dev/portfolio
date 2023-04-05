@@ -232,12 +232,6 @@ export default function Navbar() {
         >
           Contact
         </Link>
-        <Link
-          href="/resume"
-          className="text-base font-normal text-gray-600 dark:text-gray-300"
-        >
-          Resume
-        </Link>
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
 
   const meta = {
     title: "Nick Ahlers",
-    description: `I've been developing websites for 5 years straight. Get in touch with me to know more.`,
+    description: `Love to code, especially with React and NextJS!`,
     image: "/avatar.png",
     type: "website",
     ...customMeta,
@@ -18,16 +18,17 @@ export default function ContainerBlock({ children, ...customMeta }) {
     <div>
       <Head>
         <title>{meta.title}</title>
+        <meta name="viewport" content="viewport-fit=cover" />
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        <meta
-          property="og:url"
-          content={`https://yourwebsite.com${router.asPath}`}
+        {/* <meta
+          property="url"
+          content={`https://google.com${router.asPath}`}
         />
         <link
           rel="canonical"
-          href={`https://yourwebsite.com${router.asPath}`}
-        />
+          href={`https://google.com${router.asPath}`}
+        /> */}
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Nick Ahlers" />
         <meta property="og:description" content={meta.description} />
@@ -37,7 +38,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
           <meta property="article:published_time" content={meta.date} />
         )}
       </Head>
-      <main className="dark:bg-gray-800 w-full">
+      <main className="dark:bg-gray-800 w-full h-full">
         <Navbar />
         <div>{children}</div>
         <Footer />

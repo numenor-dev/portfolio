@@ -8,7 +8,7 @@ export default function LatestCode({ repositories, latestRepo}) {
     <section className="bg-[#F1F1F1] md:-mt-36 dark:bg-gray-900 pb-28">
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center md:pt-40 mx-10">
-          <h1 className="text-5xl lg:text-8xl max-w-xl font-bold text-gray-500 mt-28 md:-mt-4 md:ml-10 md:text-white dark:text-slate-800 text-center lg:text-left">
+          <h1 className="text-5xl lg:text-8xl max-w-xl font-bold text-gray-500 mt-28 md:mt-1 md:ml-10 md:text-white dark:text-slate-800 text-center lg:text-left">
             Latest Code
           </h1>
           <a
@@ -16,8 +16,8 @@ export default function LatestCode({ repositories, latestRepo}) {
             target="_blank"
             rel="noopener noreferrer"
             className="mb-20 md:mb-0 px-8 py-4 rounded-md bg-white drop-shadow-2xl 
-            text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700
-            mt-16"
+            text-xl font-semibold flex flex-row space-x-3 items-center dark:text-gray-700
+            mt-6"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ export default function LatestCode({ repositories, latestRepo}) {
           </a>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-10 lg:-mt-10 gap-y-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto px-10 lg:-mt-10 gap-y-20">
         {/* Single github Repo */}
 
         {repos &&
@@ -52,7 +52,7 @@ export default function LatestCode({ repositories, latestRepo}) {
 
 const GithubRepoCard = ({ latestRepo }) => {
   return (
-    <div className="max-w-5xl mx-auto md:ml-28 md:mt-8">
+    <div className="max-w-5xl mx-auto md:ml-28 md:mt-16">
       <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
         {latestRepo.name}
       </h1>

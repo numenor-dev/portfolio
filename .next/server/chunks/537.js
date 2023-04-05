@@ -243,11 +243,6 @@ function Navbar() {
                         href: "/contact",
                         className: "text-base font-normal text-gray-600 dark:text-gray-300",
                         children: "Contact"
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                        href: "/resume",
-                        className: "text-base font-normal text-gray-600 dark:text-gray-300",
-                        children: "Resume"
                     })
                 ]
             })
@@ -261,7 +256,7 @@ function Navbar() {
 
 function Footer() {
     return /*#__PURE__*/ jsx_runtime_.jsx("div", {
-        className: "bg-[#F1F1F1] dark:bg-gray-900",
+        className: "bg-[#F1F1F1] dark:bg-gray-900 pb-96",
         children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
             className: "max-w-6xl  mx-auto px-4 py-10 md:py-20",
             children: [
@@ -331,7 +326,7 @@ function ContainerBlock({ children , ...customMeta }) {
     const router = (0,router_.useRouter)();
     const meta = {
         title: "Nick Ahlers",
-        description: `I've been developing websites for 5 years straight. Get in touch with me to know more.`,
+        description: `Love to code, especially with React and NextJS!`,
         image: "/avatar.png",
         type: "website",
         ...customMeta
@@ -344,20 +339,16 @@ function ContainerBlock({ children , ...customMeta }) {
                         children: meta.title
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                        name: "viewport",
+                        content: "viewport-fit=cover"
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                         name: "robots",
                         content: "follow, index"
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                         content: meta.description,
                         name: "description"
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                        property: "og:url",
-                        content: `https://yourwebsite.com${router.asPath}`
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("link", {
-                        rel: "canonical",
-                        href: `https://yourwebsite.com${router.asPath}`
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("meta", {
                         property: "og:type",
@@ -386,7 +377,7 @@ function ContainerBlock({ children , ...customMeta }) {
                 ]
             }),
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)("main", {
-                className: "dark:bg-gray-800 w-full",
+                className: "dark:bg-gray-800 w-full h-full",
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx(Navbar, {}),
                     /*#__PURE__*/ jsx_runtime_.jsx("div", {
@@ -474,8 +465,8 @@ const userData = {
             desc: "Deciphered classified data gathered from special operations."
         }
     ],
-    resumeUrl: "https://drive.google.com/file/d/1xmE3BOmgM7TAOOgVp36xQIQvYDntDYoo/view?usp=sharing",
-    mernCert: "https://drive.google.com",
+    resumeUrl: "https://drive.google.com/file/d/1Nqn4vvRKqN-DkIdAmkVoQXafg9rHbamO/view?usp=share_link",
+    mernCert: "https://drive.google.com/file/d/1szbtm8OkMXUx58Z2sKxJBNwfBtgFhfKs/view?usp=share_link",
     socialLinks: {
         linkedin: "https://linkedin.com/in/nick-ahlers",
         github: "https://github.com/numenor-dev"

@@ -4,18 +4,18 @@ import userData from "@constants/data";
 export default function AboutMe() {
   return (
     <section className="bg-white dark:bg-gray-800">
-      <div className="max-w-5xl leading-loose text-lg md:text-xl mx-auto h-36 bg-white dark:bg-gray-800">
-        <p>{userData.about.title}</p>
+      <div className="max-w-5xl text-md md:text-lg mx-auto h-40 md:h-32 bg-white dark:bg-gray-800">
+        <p className="px-4">{userData.about.title}</p>
       </div>
         
-      <div className="bg-[#F1F1F1] dark:bg-gray-900 px-4">
-        <div className="pt-20 grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto gap-y-20 gap-x-20">
+      <div className="bg-[#F1F1F1] dark:bg-gray-900">
+        <div className="pt-14 px-4 grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto gap-y-20 gap-x-20">
           {/* Text area */}
           <div className="col-span-1 md:col-span-2 -mt-3">
             {userData.about.description?.map((desc, idx) => (
               <p
                 key={idx}
-                className="text-lg md:text-xl text-gray-700 mb-4 dark:text-gray-300"
+                className="text-md md:text-lg text-gray-700 mb-4 dark:text-gray-300"
               >
                 {desc}
               </p>
