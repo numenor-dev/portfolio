@@ -9,8 +9,8 @@ const userData = {
   address: "Kirkland, WA",
   projects: [
     {
-      title: "Portfolio Site",
-      link: "localhost:3000",
+      title: "Portfolio",
+      link: "nickaportfolio.com",
       imgUrl: "/pf.png",
       description: "Professional portfolio showcasing additional projects I've built. This site was built with NextJS, TailwindCSS, Axios, and RoughNotation."
     },
