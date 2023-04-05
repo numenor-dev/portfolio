@@ -411,7 +411,7 @@ const userData = {
     projects: [
         {
             title: "Portfolio",
-            link: "nickaportfolio.com",
+            link: "https://nickaportfolio.com",
             imgUrl: "/pf.png",
             description: "Professional portfolio showcasing additional projects I've built. This site was built with NextJS, TailwindCSS, Axios, and RoughNotation."
         },
