@@ -4,7 +4,7 @@ import userData from "@constants/data";
 export default function AboutMe() {
   return (
     <section className="bg-white dark:bg-gray-800">
-      <div className="max-w-5xl text-md md:text-lg mx-auto h-40 md:h-32 bg-white dark:bg-gray-800">
+      <div className="max-w-5xl text-md md:text-lg mx-auto h-40 md:h-32 mt-10 bg-white dark:bg-gray-800">
         <p className="px-4">{userData.about.title}</p>
       </div>
         
