@@ -5,19 +5,18 @@ export default function LatestCode({ repositories, latestRepo}) {
   const [repos, setRepos] = useState(repositories);
 
   return (
-    <section className="bg-[#F1F1F1] lg:-mt-36 dark:bg-gray-900 pb-28">
+    <section className="bg-[#F1F1F1] mt-4 pb-10 dark:bg-gray-900 lg:pb-28 lg:-mt-36">
       <div className="lg:max-w-5xl max-w-2xl mx-auto">
-        <div className="flex flex-col lg:flex-row justify-between items-center lg:pt-40 mx-10">
-          <h1 className="text-6xl lg:text-8xl font-bold text-gray-500 mt-8 mb-2 lg:pl-0 pl-5 lg:mt-2 lg:ml-8 dark:text-slate-800 text-center lg:text-left">
+        <div className="flex flex-col mx-10 lg:flex-row justify-between items-center lg:pt-40">
+          <h1 className="text-7xl lg:text-8xl mt-24 mb-2 ml-5 font-bold text-gray-500 lg:pl-0 pl-5 lg:mt-2 lg:ml-8 dark:text-slate-800 text-center lg:text-left">
             Latest Code
           </h1>
           <a
             href={`https://github.com/${userData.githubUsername}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="mb-6 lg:mb-0 px-8 py-4 rounded-md bg-white drop-shadow-2xl 
-            text-xl font-semibold flex flex-row space-x-3 items-center dark:text-gray-700
-            mt-3"
+            className="mb-6 lg:mb-0 px-8 py-4 mt-14 ml-2 rounded-md bg-white drop-shadow-2xl 
+            text-xl font-semibold flex flex-row space-x-3 items-center dark:text-gray-700"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +55,7 @@ const GithubRepoCard = ({ latestRepo }) => {
       <h1 className="font-semibold text-2xl lg:text-xl dark:text-gray-200 text-gray-700">
         {latestRepo.name}
       </h1>
-      <p className="text-base font-normal my-4 text-gray-500">
+      <p className="text-base font-normal my-3 text-gray-500">
         {latestRepo.description}
       </p>
       <a

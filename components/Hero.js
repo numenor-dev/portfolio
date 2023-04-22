@@ -9,7 +9,7 @@ export default function Hero() {
     <div className="max-w-6xl mx-auto flex flex-row overflow-hidden">
       {/* Text container */}
 
-      <div className="mx-auto relative text-center lg:text-left lg:pl-0 lg:pt-20 lg:pr-24 lg:pb-20 pb-8 pl-11 pt-7">
+      <div className="mx-auto relative text-center mb-20 mt-4 pl-11 pt-7 lg:mt-0 lg:text-left lg:pl-0 lg:pt-20 lg:pr-24 lg:pb-20 lg:mb-0">
         <RoughNotationGroup show={true}>
           <div className="mb-1">
             <h3 className="lg:text-6xl text-5xl font-bold text-gray-700 dark:text-gray-200">
