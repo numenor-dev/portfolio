@@ -10,11 +10,6 @@ export default function Contact() {
       <div className="rounded-md shadow-2xl bg-[#F1F1F1] dark:bg-gray-900 p-4 md:p-10 lg:p-20 max-w-5xl mx-auto mb-44 -mt-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
           <div className="md:ml-4">
-            <header className="">
-              <h1 className="text-gray-900 dark:text-gray-50 font-semibold text-lg">
-                Feel free to reach out!
-              </h1>
-            </header>
             <div className="icons-container inline-flex flex-col my-20">
               <div className="flex flex-row items-center space-x-6 rounded-md 
                 border border-slate-300 dark:border-slate-600 
@@ -113,8 +108,8 @@ export default function Contact() {
             </div> */}
           </div>
           <div className="hidden md:inline-block">
-              <div className="w-72 mx-auto mt-24">
-                <img src={userData.contactAvatar} alt="Contact Avatar" className="drop-shadow-2xl rounded-2xl" />
+              <div className="w-72 mx-auto mt-36">
+               <p className="animate-text bg-gradient-to-r from-slate-500 via-green-500 to-blue-900 bg-clip-text text-transparent text-2xl font-bold">Feel free to reach out!</p>
               </div>
             </div>
           {/* <form className="form rounded-lg bg-white p-4 flex flex-col">
