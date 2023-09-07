@@ -30,19 +30,19 @@ const userData = {
       title: "Zumiez US",
       link: "http://www.zumiez.com",
       imgUrl: "/zus.png",
-      description: "The Zumiez US site built for action sport enthusiasts. Built with JavaScript, JQuery, HTML, CSS, and a Magento backend.",
+      description: "The Zumiez US site for action sport enthusiasts. Built with JavaScript, JQuery, HTML, CSS, and a Magento backend.",
     },
     {
       title: "Zumiez Canada",
       link: "http://www.zumiez.ca",
       imgUrl: "/zca.png",
-      description: "The Zumiez Canada site built for action sport enthusiasts. Built with JavaScript, JQuery, HTML, CSS, and a Magento backend.",
+      description: "The Zumiez Canada site for action sport enthusiasts. Built with JavaScript, JQuery, HTML, CSS, and a Magento backend.",
     },
     {
       title: "Zumiez Spanish",
       link: "http://www.zumiez.com/es_us",
       imgUrl: "/zes.png",
-      description: "The Zumiez Spanish site built for action sport enthusiasts. Built with JavaScript, JQuery, HTML, CSS, and a Magento backend.",
+      description: "The Zumiez Spanish site for action sport enthusiasts. Built with JavaScript, JQuery, HTML, CSS, and a Magento backend.",
     }
   ],
   about: {
