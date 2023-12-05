@@ -27,12 +27,6 @@ const userData = {
       description: "A real time, severe weather search using the weather.gov API. Built with React, Reactstrap, Redux, Express, and MongoDB.",
     },
     {
-      title: "Washington Nature",
-      link: "http://ec2-34-220-54-251.us-west-2.compute.amazonaws.com",
-      imgUrl: "/wn.png",
-      description: "A dedicated site for fictional scenery in Washington state. Built with React, Reactstrap, Redux, Express, and MongoDB.",
-    },
-    {
       title: "Zumiez US Legacy",
       link: "https://web.archive.org/web/20230511123220/https://www.zumiez.com/",
       imgUrl: "/zuslegacy.png",
