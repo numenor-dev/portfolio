@@ -79,8 +79,8 @@ export default function AboutMe() {
                 alt="MongoDB"
                 title="MongoDB"
               />
-              <img src="https://i.ibb.co/K6JD5tB/aws.webp"
-              className="h-24 w-26 -mx-1 my-3"
+              <img src="https://i.postimg.cc/yNt4njgx/aws.jpg"
+              className="h-20 w-20 mx-4 my-4"
               alt="AWS"
               title="AWS"
               />

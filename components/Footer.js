@@ -57,7 +57,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-white dark:bg-gray-800 pt-36"></div>
+      <div className="bg-white dark:bg-gray-800 pt-36 pb-40"></div>
+      <div className="bg-white dark:bg-gray-800 pb-96"></div>
     </div>
   );
 }
