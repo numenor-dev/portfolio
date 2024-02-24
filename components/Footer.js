@@ -19,7 +19,7 @@ export default function Footer() {
               </div>
             </div> */}
           </div>
-          <div className="space-x-2 flex flex-row items-center">
+          <div className="space-x-2 flex flex-row items-center max-sm:ml-auto max-sm:mr-10">
           <a
                 href={userData.socialLinks.github}
                 className="h-16 w-16 lg:h-10 lg:w-10 rounded-full hover:bg-blue-500 flex items-center justify-center cursor-pointer"
@@ -57,8 +57,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-white dark:bg-gray-800 pt-36 pb-40"></div>
-      <div className="bg-white dark:bg-gray-800 pb-96"></div>
+      <div className="bg-white dark:bg-gray-800 pb-36"></div>
+      <div className="bg-white dark:bg-gray-800 max-sm:pb-56"></div>
     </div>
   );
 }
