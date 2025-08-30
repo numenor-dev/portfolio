@@ -19,37 +19,38 @@ export default function Navbar() {
     setToggle(!toggle);
   }
 
+  console.log("Theme: ", theme);
+
   return (
     <div className="lg:max-w-6xl lg:mx-auto px-4 pt-20">
-      <div className="flex flex-row justify-between items-center">
-        <div className="flex flex-col">
+      <div className="flex flex-row justify-between">
+        <div className="flex flow-col items-center">
           <Link href="/">
-          <div className="hidden lg:block">
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            fill="none" 
-            viewBox="0 0 24 24" 
-            strokeWidth="1.5" 
-            stroke="currentColor" 
-            class="w-6 h-6"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-          </svg>
-          </div>
-            
+            <div className="hidden lg:block cursor-pointer hover:scale-110 transition-transform">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+              </svg>
+            </div>
+
           </Link>
         </div>
 
-        <div className="space-x-8 hidden lg:block">
+        <div className="hidden lg:block lg:flex lg:flex-row lg:space-x-8">
           <Link
             href="/about"
-            className={`text-base  ${
-              router.asPath === "/about"
-                ? "text-gray-800 font-bold dark:text-gray-400"
-                : "text-gray-600 dark:text-gray-300 font-normal "
-            }`}
+            className={`text-base ${router.asPath === "/about"
+              ? "text-gray-800 font-bold dark:text-gray-400"
+              : "text-gray-600 dark:text-gray-300 font-normal"
+              }`}
           >
-            About{" "}
+            <h2 className="hover:translate-x-1 transition duration-300">About</h2>
             {router.asPath === "/about" && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -68,13 +69,12 @@ export default function Navbar() {
           </Link>
           <Link
             href="/projects"
-            className={`text-base  ${
-              router.asPath === "/projects"
-                ? "text-gray-800 font-bold dark:text-gray-400"
-                : "text-gray-600 dark:text-gray-300 font-normal "
-            }`}
+            className={`text-base  ${router.asPath === "/projects"
+              ? "text-gray-800 font-bold dark:text-gray-400"
+              : "text-gray-600 dark:text-gray-300 font-normal"
+              }`}
           >
-            Projects
+            <h2 className="hover:translate-x-1 transition duration-300">Projects</h2>
             {router.asPath === "/projects" && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -93,13 +93,12 @@ export default function Navbar() {
           </Link>
           <Link
             href="/experience"
-            className={`text-base  ${
-              router.asPath === "/experience"
-                ? "text-gray-800 font-bold dark:text-gray-400"
-                : "text-gray-600 dark:text-gray-300 font-normal "
-            }`}
+            className={`text-base ${router.asPath === "/experience"
+              ? "text-gray-800 font-bold dark:text-gray-400"
+              : "text-gray-600 dark:text-gray-300 font-normal "
+              }`}
           >
-            Experience{" "}
+            <h2 className="hover:translate-x-1 transition duration-300">Experience</h2>
             {router.asPath === "/experience" && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -118,13 +117,12 @@ export default function Navbar() {
           </Link>
           <Link
             href="/contact"
-            className={`text-base  ${
-              router.asPath === "/contact"
-                ? "text-gray-800 font-bold dark:text-gray-400"
-                : "text-gray-600 dark:text-gray-300 font-normal "
-            }`}
+            className={`text-base  ${router.asPath === "/contact"
+              ? "text-gray-800 font-bold dark:text-gray-400"
+              : "text-gray-600 dark:text-gray-300 font-normal "
+              }`}
           >
-            Contact
+            <h2 className="hover:translate-x-1 transition duration-300">Contact</h2>
             {router.asPath === "/contact" && (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -151,7 +149,7 @@ export default function Navbar() {
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16" 
+              width="16"
               height="16"
               fill="currentColor"
               className="bi bi-github h-10 w-10 lg:h-5 lg:w-5"
@@ -212,12 +210,12 @@ export default function Navbar() {
         </div>
       </div>
       <div className="-mt-16 lg:-mt-8 lg:hidden">
-        <button 
+        <button
           onClick={handleToggle}>
-          <svg 
-            xmlns="http://www.w3.org/2000/svg" 
-            fill="none" 
-            viewBox="0 0 24 24" 
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
             strokeWidth="0.7" stroke="currentColor" className="w-20 h-20 -mt-2 lg:mt-0 lg:w-6 lg:h-6"
           >
             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
@@ -229,60 +227,60 @@ export default function Navbar() {
           </svg>
         </button>
 
-          {/* Mobile menu toggle */}         
-            <div className={toggle ? 
-              'relative flex flex-col space-y-12 mt-5 w-40 transform transition-transform translate-x-10 duration-1000' : ''}
-               >
-              <Link
-                href="/"
-                className={toggle ?
-                'text-2xl transition-opacity opacity-80 duration-300 hover:text-sky-700 hover:dark:text-slate-400' 
-                : 'transition-opacity opacity-0 duration-0'}
-              >
-                Home
-              </Link>
-              <Link
-                href="/about"
-                className={
-                  toggle ? 
-                  'text-2xl transition-opacity opacity-80 duration-500 hover:text-sky-700 hover:dark:text-slate-400' 
-                  : 'transition-opacity opacity-0 duration-0'
-                }
-              >
-                About
-              </Link>
-              <Link
-                href="/projects"
-                className={
-                  toggle ? 
-                  'text-2xl transition-opacity opacity-80 duration-700 hover:text-sky-700 hover:dark:text-slate-400' 
-                  : 'transition-opacity opacity-0 duration-0'
-                }
-              >
-                Projects
-              </Link>
-              <Link
-                href="/experience"
-                className={
-                  toggle ? 
-                  'text-2xl transition-opacity opacity-80 duration-1000 hover:text-sky-700 hover:dark:text-slate-400' 
-                  : 'transition-opacity opacity-0 duration-0'
-                }
-              >
-                Experience
-              </Link>
-              <Link
-                href="/contact"
-                className={
-                  toggle ? 
-                  'text-2xl transition-opacity opacity-80 duration-1000 hover:text-sky-700 hover:dark:text-slate-400' 
-                  : 'transition-opacity opacity-0 duration-0'
-                }
-              >
-                Contact
-              </Link>
-            </div>
+        {/* Mobile menu toggle */}
+        <div className={toggle ?
+          'relative flex flex-col space-y-12 mt-5 w-40 transform transition-transform translate-x-10 duration-1000' : ''}
+        >
+          <Link
+            href="/"
+            className={toggle ?
+              'text-2xl transition-opacity opacity-80 duration-300 hover:text-sky-700 hover:dark:text-slate-400'
+              : 'transition-opacity opacity-0 duration-0'}
+          >
+            Home
+          </Link>
+          <Link
+            href="/about"
+            className={
+              toggle ?
+                'text-2xl transition-opacity opacity-80 duration-500 hover:text-sky-700 hover:dark:text-slate-400'
+                : 'transition-opacity opacity-0 duration-0'
+            }
+          >
+            About
+          </Link>
+          <Link
+            href="/projects"
+            className={
+              toggle ?
+                'text-2xl transition-opacity opacity-80 duration-700 hover:text-sky-700 hover:dark:text-slate-400'
+                : 'transition-opacity opacity-0 duration-0'
+            }
+          >
+            Projects
+          </Link>
+          <Link
+            href="/experience"
+            className={
+              toggle ?
+                'text-2xl transition-opacity opacity-80 duration-1000 hover:text-sky-700 hover:dark:text-slate-400'
+                : 'transition-opacity opacity-0 duration-0'
+            }
+          >
+            Experience
+          </Link>
+          <Link
+            href="/contact"
+            className={
+              toggle ?
+                'text-2xl transition-opacity opacity-80 duration-1000 hover:text-sky-700 hover:dark:text-slate-400'
+                : 'transition-opacity opacity-0 duration-0'
+            }
+          >
+            Contact
+          </Link>
+        </div>
       </div>
-    </div>
+    </div >
   );
 }
