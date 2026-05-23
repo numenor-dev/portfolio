@@ -13,9 +13,7 @@ Deployment: Vercel
 
 ## Notable Technical Details
 
-Built with custom animation using Motion's useScroll, useSpring, and useTransform hooks. Project cards stack on scroll and an animated timeline appears in the Experience section. 3D components built with isometric CSS transforms and layered planes via a custom LogoAnimation component
-Dark-only design enforced at the layout level with a dark editorial aesthetic and sky blue accents throughout.
-Performance first architecture using Next.js App Router conventions, server components where applicable, and optimized font and image loading
+Built with custom animation using Motion's useScroll, useSpring, and useTransform hooks. Project cards stack on scroll and an animated timeline appears in the Experience section. Stacking on scroll was chosen as a quick way to scale this for future projects. 3D components built with isometric CSS transforms and layered planes via a custom LogoAnimation component. Dark-only design enforced at the layout level with a dark editorial aesthetic and sky blue accents throughout. Chose Next.js App Router conventions, SSR, and lightweight animations for optimal LCP and overall performance.
 
 
 ## Project Structure
