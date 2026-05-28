@@ -30,7 +30,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} relative`}
     >
-      <body className="antialiased min-h-dvh text-zinc-300 font-sans bg-almost-black w-screen">
+      <body className="antialiased min-h-dvh text-zinc-300 font-sans bg-almost-black">
         <main>
           {children}
         </main>

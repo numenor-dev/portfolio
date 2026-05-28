@@ -19,7 +19,7 @@ export default function Footer() {
     return (
         <footer className="flex border-t border-zinc-50/20">
             <span className="flex mx-auto h-24 space-x-12 items-center">
-                <ul className="flex items-center space-x-12">
+                <ul className="flex items-center space-x-5 text-sm md:text-base md:space-x-12">
                     {links.map(({ href, label }) => (
                         <li key={href}>
                             {href === "/" ?
