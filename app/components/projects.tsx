@@ -1,4 +1,4 @@
-import { motion, useScroll, useTransform } from "motion/react";
+import { motion, useMotionValueEvent, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import { projects, techDelay } from "../lib/static-data";
 import ProjectCard from "./animations/project-card";
@@ -12,7 +12,11 @@ export default function Projects() {
     });
 
     // h2 animates once cards finish animating
-    const scrollOpacity = useTransform(scrollYProgress, [0.25, 0.45], [0.01, 1]);
+    const scrollOpacity = useTransform(scrollYProgress, [0.1, 0.5], [0.01, 1]);
+
+    useMotionValueEvent(scrollYProgress, "change", (v) => {
+        console.log("scrollYProgress:", v);
+    });
 
     return (
         <section ref={containerRef} className="relative h-[200vh] -mt-24 sm:mt-0">
