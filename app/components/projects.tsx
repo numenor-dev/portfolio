@@ -1,10 +1,12 @@
-import { motion, useMotionValueEvent, useScroll, useTransform } from "motion/react";
-import { useRef } from "react";
+import { motion, useScroll, useTransform, useMotionValue } from "motion/react";
+import { useEffect, useRef } from "react";
 import { projects, techDelay } from "../lib/static-data";
 import ProjectCard from "./animations/project-card";
 
 export default function Projects() {
     const containerRef = useRef<HTMLDivElement | null>(null);
+
+    const opacity = useMotionValue(0);
 
     const { scrollYProgress } = useScroll({
         target: containerRef,
@@ -12,19 +14,23 @@ export default function Projects() {
     });
 
     // h2 animates once cards finish animating
-    const scrollOpacity = useTransform(scrollYProgress, [0.1, 0.5], [0.01, 1]);
+    const scrollOpacity = useTransform(scrollYProgress, [0.1, 0.45], [0, 1]);
 
-    useMotionValueEvent(scrollYProgress, "change", (v) => {
-        console.log("scrollYProgress:", v);
-    });
+    useEffect(() => {
+        const initOpacity = scrollOpacity.on("change", (v) => opacity.set(v));
+        return initOpacity;
+    }, [scrollOpacity, opacity])
 
     return (
-        <section ref={containerRef} className="relative h-[200vh] -mt-24 sm:mt-0">
+        <section
+            ref={containerRef}
+            className="relative h-[200vh] -mt-24 sm:mt-0"
+        >
             <div className="sticky top-0 h-dvh flex flex-col items-center justify-center">
                 <motion.h2
                     className="text-3xl md:text-4xl font-semibold tracking-tighter mb-1 sm:mb-2"
                     style={{
-                        opacity: scrollOpacity,
+                        opacity,
                         y: -270,
                     }}
                 >
