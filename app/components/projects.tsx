@@ -13,7 +13,7 @@ export default function Projects() {
         offset: ["start start", "end start"],
     });
 
-    // h2 animates once cards finish animating
+    // h2 begins animating soon after cards start animating
     const scrollOpacity = useTransform(scrollYProgress, [0.1, 0.45], [0, 1]);
 
     useEffect(() => {

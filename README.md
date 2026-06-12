@@ -18,13 +18,13 @@ Personal portfolio site built to showcase projects, skills, and experience as a 
 
 ## Features
 
-**Scroll-driven animations** — Project cards stack on scroll using Motion's `useScroll`, `useSpring`, and `useTransform` hooks, making it trivially easy to add new projects without restructuring the layout.
+**Scroll-driven animations**: Project cards stack on scroll using Motion's `useScroll`, `useSpring`, and `useTransform` hooks, making it trivially easy to add new projects without restructuring the layout.
 
-**3D isometric logo** — A custom `LogoAnimation` component built with isometric CSS transforms and layered planes, rendered via React Three Fiber.
+**3D isometric logo**: A custom `LogoAnimation` component built with isometric CSS transforms and layered planes, rendered via React Three Fiber.
 
-**Dark-only design** — Dark mode is enforced at the layout level with a dark editorial aesthetic and sky blue accents throughout.
+**Dark-only design**: Dark mode is enforced at the layout level with a dark editorial aesthetic and sky blue accents throughout.
 
-**Performance-first** — Next.js App Router with SSR and lightweight animation primitives keeps LCP fast. Integrated with Vercel Speed Insights for real user monitoring.
+**Performance-first**: Next.js App Router with SSR and lightweight animation primitives keeps LCP fast. Integrated with Vercel Speed Insights for real user monitoring.
 
 ## Project Structure
 

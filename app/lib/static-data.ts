@@ -4,7 +4,7 @@ export const projects = [
         key: 0,
         title: "Personalized Investment Explorer",
         desc: "An investment learning tool based on personal interests. Integrated with Claude.",
-        tech: ["Next.js", "Tailwind", "Claude Sonnet", "TypeScript", "Zustand", "Zod"],
+        tech: ["Next.js", "Tailwind", "Anthropic API", "TypeScript", "Zustand", "Zod"],
         href: "https://slice.vercel.app",
     },
     {
