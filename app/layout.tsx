@@ -31,10 +31,10 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} relative`}
     >
+      <GoogleTagManager gtmId="G-K6KF9S9KKX" />
       <body className="antialiased min-h-dvh text-zinc-300 font-sans bg-almost-black">
         <main>
           {children}
-          <GoogleTagManager gtmId="G-K6KF9S9KKX" />
         </main>
         <SpeedInsights />
       </body>
