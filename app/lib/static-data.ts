@@ -1,16 +1,20 @@
 
 export const projects = [
     {
-        key: 0,
+        title: "Haven",
+        desc: "Intelligent client onboarding platform for law firms. Guides clients through a conversational onboarding flow, then generates a structured chat summary and delivers it directly to the attorney dashboard.",
+        tech: ["Next.js", "Neon PostgreSQL", "TypeScript", "API streaming", "Anthropic SDK"],
+        href: "https://gohaven.vercel.app",
+    },
+    {
         title: "Personalized Investment Explorer",
-        desc: "An investment learning tool based on personal interests. Integrated with Claude.",
+        desc: "An AI-powered learning tool that maps investment concepts to your personal interests, making them easier to understand and explore.",
         tech: ["Next.js", "Tailwind", "Anthropic API", "TypeScript", "Zustand", "Zod"],
         href: "https://slice.vercel.app",
     },
     {
-        key: 1,
         title: "US Jobs & Inflation Report",
-        desc: "Economic data visualization comparing job growth and inflation trends.",
+        desc: "Interactive dashboard visualizing the relationship between job growth and inflation across U.S. economic cycles, pulling from live government data sources.",
         tech: ["Next.js", "Tailwind", "Recharts", "TypeScript", "REST"],
         href: "https://jobsandinflation.vercel.app",
     },
