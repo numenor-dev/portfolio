@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -31,7 +31,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} relative`}
     >
-      <GoogleTagManager gtmId="G-K6KF9S9KKX" />
+      <GoogleAnalytics gaId={process.env.GA_ID!} />
       <body className="antialiased min-h-dvh text-zinc-300 font-sans bg-almost-black">
         <main>
           {children}
