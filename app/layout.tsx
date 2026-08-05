@@ -31,8 +31,8 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} relative`}
     >
+      <GoogleAnalytics gaId={process.env.GA_ID!} />
       <body className="antialiased min-h-dvh text-zinc-300 font-sans bg-almost-black">
-        <GoogleAnalytics gaId={process.env.GA_ID!} />
         <main>
           {children}
         </main>
