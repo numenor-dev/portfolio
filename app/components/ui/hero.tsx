@@ -32,8 +32,8 @@ export default function HeroSection() {
                     animate={stackLanded ? { opacity: 1 } : {}}
                     transition={{ duration: 1.2, delay: 0.6, ease: [0.76, 0, 0.24, 1] }}
                 >
-                    I&apos;m a Frontend Developer with several years of production React experience.
-                    Scroll to learn more about me and my work.
+                    I&apos;m a Frontend Engineer with 3+ years of experience shipping
+                    production React and Next.js applications across e-commerce and full stack AI-powered SaaS
                 </motion.p>
             </div>
         </section>
