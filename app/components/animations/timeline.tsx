@@ -140,7 +140,7 @@ export default function TimeLine() {
     }, [resetAnimation, isInView, runAnimation]);
 
     return (
-        <section className="relative mx-auto -mt-12 xl:pl-7 md:-mt-14 [@media(max-height:750px)]:mt-20 [@media(max-height:750px)]:md:pl-0">
+        <section className="relative mx-auto -mt-12 xl:pl-7 md:-mt-14 [@media(max-height:750px)]:mt-0 [@media(max-height:750px)]:md:pl-0">
             <div className="flex justify-center mb-8">
                 <motion.h2
                     ref={h2Ref}

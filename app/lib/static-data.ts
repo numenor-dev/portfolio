@@ -2,25 +2,32 @@
 export const projects = [
     {
         title: "Haven",
-        desc: "Intelligent client onboarding platform for law firms. Guides clients through a conversational onboarding flow, then generates a structured chat summary and delivers it directly to the attorney dashboard.",
-        tech: ["Next.js", "Neon PostgreSQL", "TypeScript", "API streaming", "Anthropic SDK"],
+        desc: "Full stack SaaS onboarding platform for law firms. Features an LLM-powered onboarding workflow that generates clear, structured client summaries in a route protected dashboard.",
+        tech: ["Next.js", "PostgreSQL", "TypeScript", "LLM streaming", "OAuth"],
         href: "https://gohaven.vercel.app",
     },
     {
         title: "Personalized Investment Explorer",
-        desc: "An AI-powered learning tool that maps investment concepts to your personal interests, making them easier to understand and explore.",
-        tech: ["Next.js", "Tailwind", "Anthropic API", "TypeScript", "Zustand", "Zod"],
+        desc: "An LLM-integrated investment learning tool that converts user interests into structured, personalized recommendations grounded in passion and value investing strategies.",
+        tech: ["Next.js", "Tailwind", "LLM API", "TypeScript", "Zustand", "Zod"],
         href: "https://slice.vercel.app",
-    },
-    {
-        title: "US Jobs & Inflation Report",
-        desc: "Interactive dashboard visualizing the relationship between job growth and inflation across U.S. economic cycles, pulling from live government data sources.",
-        tech: ["Next.js", "Tailwind", "Recharts", "TypeScript", "REST"],
-        href: "https://jobsandinflation.vercel.app",
     },
 ];
 
 export const experience = [
+    {
+        company: "Haven",
+        role: "Founder & Full Stack Developer",
+        date: "2026 - Present",
+        location: "Remote",
+        highlights: [
+            "Near-instant response times with LLM streaming",
+            "Session-scoped API routes protected by OAuth",
+            "Dynamic routing for strict data isolation",
+            "Automatic workflow summaries"
+        ]
+
+    },
     {
         company: "Zumiez",
         role: "Frontend Developer",
@@ -28,10 +35,9 @@ export const experience = [
         location: "Lynnwood, WA",
         highlights: [
             "50% faster page load via React PWA migration",
+            "Improved design-to-production time via reusable component library",
             "40% quicker API responses after GraphQL restructuring",
-            "50% fewer checkout steps by integrating Aurus tokenization",
-            "30% faster design-to-production via reusable component library",
-            
+            "Checkout steps cut in half by integrating Aurus tokenization"
         ],
     },
     {

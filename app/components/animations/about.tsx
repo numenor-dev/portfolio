@@ -68,11 +68,12 @@ export default function AboutAnimation() {
                     initial="hidden"
                     animate={spanControls}
                     variants={spanVariants}>
-                    I build full-stack interfaces where
-                    speed and intuitive design are the default.
-                    I specialize in creating seamless web apps
-                    with <strong className="text-sky-300">Next.js</strong>, <strong className="text-sky-300">TypeScript</strong>,
-                    and intelligent <strong className="text-sky-300">AI integrations</strong>.
+                    I specialize in building full-stack applications
+                    with <strong className="text-sky-300">Next.js</strong>,{' '}
+                    <strong className="text-sky-300">TypeScript</strong>,{' '}
+                    <strong className="text-sky-300">Postgres</strong>,{' '}
+                    and <strong className="text-sky-300">LLM integrations</strong>,
+                    where speed and intuitive design are the default.
                 </motion.span>
             </div>
         </section>
