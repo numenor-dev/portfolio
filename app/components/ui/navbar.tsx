@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "motion/react";
 const links = [
   { href: "https://github.com/numenor-dev", label: "Github" },
   { href: "https://www.linkedin.com/in/nick-ahlers/", label: "LinkedIn" },
-  { href: "https://drive.google.com/file/d/1Jb7UaHuRyj0jvfVOmHRI8EbZZT3DBhTp/view?usp=sharing", label: "Resume" },
+  { href: "https://drive.google.com/file/d/1Z4xJCVQaJ5Zih4z5oePbL8nJl2rJHAuE/view?usp=sharing", label: "Resume" },
 ];
 
 const lineTransition = { duration: 0.5, ease: [0.4, 0, 0.2, 1] as const };
